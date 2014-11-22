@@ -1,0 +1,23 @@
+<div class="row">
+  <div id="content" class="col-md-12">
+      <% if @shares.empty? %>
+        <p id="notice">No files to share.</p>
+      <% end %>
+      <% @shares.each do |share| %>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 element text-left">
+            <div class="row">
+              <div class="col-md-9 infos">
+                <p><b>Filename:</b> <%= share.filename %></p>
+                <p><b>Token:</b> <%= share.token %></p>
+              </div>
+              <div class="col-md-3 text-right actions">
+                <%= link_to '', delete_share_path(share), method: :delete, data: { confirm: 'Are you sure?' }, class: 'glyphicon glyphicon-trash delete-icon' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  width: 100%
+
+#main-container
+  height: 100%
+  width: 100%
+  background-color: #EEE
+
+.element
+  background-color: #FFF
+  border: 1px solid #AAA
+  margin-top: 5px
+  margin-bottom: 5px
+
+.infos
+  padding-top: 10px
+
+.actions
+  padding-top: 25px
+
+.delete-icon
+  color: red
+  text-decoration: none
+
+h1
+  color: #1FA67B
+  font-weight: bold
+  margin-bottom: 50px
+
+#notice
+  color: red
+
+#login
+  padding-top: 50px
+
+  .form-wrap
+    width: 30%
+    margin: 0 auto
+
+  .form-group
+    margin-bottom: 25px
+
+  .btn.btn-custom
+    font-size: 14px
+    margin-bottom: 20px
+
+.form-control
+  color: #212121
+
+.btn-custom
+  color: #FFF
+  background-color: #1FA67B
+
+.btn-custom:hover,
+.btn-custom:focus
+  color: #FFF
+
+.delete-icon:hover
+  color: red
+  text-decoration: none
+  background-color: white
+
+.delete-icon:focus
+  color: red
+  text-decoration: none
